@@ -1,0 +1,17 @@
+echo "Building GRAMI_UNDIRECTED_SUBGRAPHS ..."
+javac -sourcepath ./GRAMI_UNDIRECTED_SUBGRAPHS/src -d ./GRAMI_UNDIRECTED_SUBGRAPHS/bin/ ./GRAMI_UNDIRECTED_SUBGRAPHS/src/**/*.java
+echo "DONE."
+
+echo "Building GRAMI_UNDIRECTED_PATTERNS ..."
+javac -sourcepath ./GRAMI_UNDIRECTED_PATTERNS/src -d ./GRAMI_UNDIRECTED_PATTERNS/bin/ ./GRAMI_UNDIRECTED_PATTERNS/src/**/*.java
+echo "DONE."
+
+echo "Building GRAMI_DIRECTED_SUBGRAPHS ..."
+javac -sourcepath ./GRAMI_DIRECTED_SUBGRAPHS/src -d ./GRAMI_DIRECTED_SUBGRAPHS/bin/ ./GRAMI_DIRECTED_SUBGRAPHS/src/**/*.java
+echo "DONE."
+
+echo "Building GRAMI_DIRECTED_PATTERNS ..."
+javac -sourcepath ./GRAMI_DIRECTED_PATTERNS/src -d ./GRAMI_DIRECTED_PATTERNS/bin/ ./GRAMI_DIRECTED_PATTERNS/src/**/*.java
+echo "DONE."
+
+echo "All done successfully!"
