@@ -34,11 +34,13 @@ Java JRE v1.6.0 or later
 
 INSTALLATION:
 
-- Uncompress grami using any compression tool
+- Uncompress Grami using any compression tool
 - Build Java binaries using the "build" script file
 - Run GraMi using "grami" script
 
 EXAMPLES:
+
+Run any of the following examples, results will be on "Output.txt". First line shows elapsed time in seconds. Second line has the number of frequent subgraphs, then frequent subgraphs are listed in the subsequent lines.
 
 1- Show GraMi breif help:
 	./grami -h
