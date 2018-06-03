@@ -50,7 +50,7 @@ frequency = 14000:
 	./grami -f mico.lg -s 14000 -t 0 -p 0
 
 3- Find frequent subgraphs in the "mico" undirected graph, with minimum
-frequency = 14000 and approximation:
+frequency = 9340 and approximation:
 	./grami -f mico.lg -s 9340 -t 0 -p 0 -approxA 0.0002 -approxB=0
 
 4- Find frequent patterns in the "citeseer" directed graph, with minimum
