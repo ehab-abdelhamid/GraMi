@@ -19,12 +19,13 @@ CONTENTS:
 REQUIREMENTS:
 =====
 
-Java JRE v1.6.0 or later
+Java JRE at least v1.6, but not past v8.
 
 INSTALLATION:
 =====
 
     - Uncompress grami using any compression tool
+    - Set `JAVA_HOME` to point to the correct version of Java (e.g., `export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/`)
     - Build Java binaries using the "build" script file
     - Run GraMi using "grami" script
 
