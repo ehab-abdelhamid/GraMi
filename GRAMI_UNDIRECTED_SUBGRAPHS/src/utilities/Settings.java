@@ -46,6 +46,9 @@ public class Settings
 	//given frequency, if not given then its value is -1
 	public static int frequency = -1;
 	
-		//the filename
+	//the filename
 	public static String fileName = null;
+
+	//the output filename
+	public static String outputFileName = null;
 }

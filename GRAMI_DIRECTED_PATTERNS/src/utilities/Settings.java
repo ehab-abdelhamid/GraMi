@@ -58,4 +58,7 @@ public class Settings
 	
 	//the maximum number of the same label appears in the resulted pattern
 	public static int numLabelAppears = -1;	
+
+	//the output filename
+	public static String outputFileName = null;
 }

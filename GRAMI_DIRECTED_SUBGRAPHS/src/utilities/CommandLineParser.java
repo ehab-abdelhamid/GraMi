@@ -36,6 +36,8 @@ public class CommandLineParser {
 			//get the dataset filename
 			if(key.compareTo("filename")==0)
 				Settings.fileName = value;
+			if(key.compareTo("outputFileName")==0)
+				Settings.outputFileName = value;
 			//assign the datasets folder
 			if(key.compareTo("datasetFolder")==0)
 				Settings.datasetsFolder = value;

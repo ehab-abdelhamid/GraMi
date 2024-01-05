@@ -14,6 +14,7 @@ while test $# -gt 0; do
                         echo " "
 			echo "-h, --help                show brief help"
                         echo "-f,			graph filename (*.lg)"
+						echo "-o,			output file name"
                         echo "-s,			minimum frequency"
                         echo "-t,			graph type: 0 for undirected graphs, 1 for directed graph"
                         echo "-p,			mining type: 0 for subgraphs mining, 1 for patterns graph"
@@ -28,6 +29,13 @@ while test $# -gt 0; do
 			shift
 			if test $# -gt 0; then
                                 file=$1
+			fi
+			shift
+			;;
+		-o)
+			shift
+			if test $# -gt 0; then
+                                outputfile=$1
 			fi
 			shift
 			;;
@@ -87,7 +95,7 @@ while test $# -gt 0; do
 done
 
 #printing some output to the users
-echo "Dataset: $file"
+echo "Dataset: $file, output file: $outputfile"
 
 if [ $type -eq 1 ]
 then
@@ -135,5 +143,5 @@ fi
 
 #Running Grami
 echo "Starting GraMi ...";
-java -cp ./$prog/bin Dijkstra.main freq=$frequency filename=$file datasetFolder=./Datasets/ distance=$distance type=$type mlabels=false maxLabelAppearance=$labels approximate=$alpha approxConst=$beta
+java -cp ./$prog/bin Dijkstra.main freq=$frequency filename=$file datasetFolder=./Datasets/ distance=$distance type=$type mlabels=false maxLabelAppearance=$labels approximate=$alpha approxConst=$beta outputFileName=$outputfile
 echo "GraMi Finished."
