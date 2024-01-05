@@ -109,9 +109,12 @@ public class main {
 			FileWriter fw;
 			try
 			{
-				String fName = "Output.txt";
-			
-				fw = new FileWriter(fName);
+				if(Settings.outputFileName==null)
+				{
+					System.out.println("You have to specify a output filename");
+					System.exit(1);
+				}
+				fw = new FileWriter(Settings.outputFileName);
 				fw.write(watch.getElapsedTime()/1000.0+"\n");
 				fw.write(sr.result.size()+"\n");
 			

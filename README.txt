@@ -40,19 +40,22 @@ INSTALLATION:
 
 EXAMPLES:
 
-Run any of the following examples, results will be on "Output.txt". First line shows elapsed time in seconds. Second line has the number of frequent subgraphs, then frequent subgraphs are listed in the subsequent lines.
+Run any of the following examples, you should set the your output file.
+ First line shows elapsed time in seconds. 
+ Second line has the number of frequent subgraphs.
+ Then frequent subgraphs are listed in the subsequent lines.
 
 1- Show GraMi breif help:
 	./grami -h
 
 2- Find frequent subgraphs in the "mico" undirected graph, with minimum
 frequency = 14000:
-	./grami -f mico.lg -s 14000 -t 0 -p 0
+    ./grami -f mico.lg -o myoutput.txt -s 14000 -t 0 -p 0
 
 3- Find frequent subgraphs in the "mico" undirected graph, with minimum
 frequency = 9340 and approximation:
-	./grami -f mico.lg -s 9340 -t 0 -p 0 -approxA 0.0002 -approxB=0
+    ./grami -f mico.lg -o myoutput.txt -s 9340 -t 0 -p 0 -approxA 0.0002 -approxB=0
 
 4- Find frequent patterns in the "citeseer" directed graph, with minimum
 frequency = 160 and maximum distance bound (edge weight) = 200:
-	./grami -f citeseer.lg -s 160 -t 1 -p 1 -d 200
+	./grami -f citeseer.lg -o myoutput.txt -s 160 -t 1 -p 1 -d 200
